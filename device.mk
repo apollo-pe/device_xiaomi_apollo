@@ -32,6 +32,10 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+   
+# Use GCamGo
+PRODUCT_PACKAGES += \
+    GCamGOPrebuilt-V3_8
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/apollo/apollo-vendor.mk)
